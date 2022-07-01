@@ -1,0 +1,204 @@
+.experience {
+    width: 100%;
+    position: relative;
+    height: 100%;
+    margin: 50px 0px;
+    display: flex;
+    flex-direction: column;
+
+}
+.experience-header {
+    text-align: center;
+    margin-bottom: 100px;
+    color: var(--main-color);
+}
+.Vertical-Line {
+    position: absolute;
+    top: 15%;
+    height: 85%;
+    width: 2px;
+    background-color: black;
+    transform: translateX(50%);
+    left: 50%;
+}
+.row {
+    display: flex;
+    width: 100%;
+    height: fit-content;
+    font-size: 22px;
+}
+.row .Sec {
+    background-color: var(--main-color);
+    margin-left: 30px;
+    border-radius: 10px;
+    color: white;
+    height: fit-content;
+    padding: 20px;
+    width: calc(50% - 100px);
+    position: relative;
+}
+.row-1 .Sec{
+    animation: sx-load 1s ease-in;
+}
+.row-1 .Sec::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    top: 20px;
+    right: -5px;
+    transform: rotate(45deg);
+}
+.row-2 .Sec::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    top: 20px;
+    left: -5px;
+    transform: rotate(45deg);
+} 
+.row-3 .Sec::before{
+    position: absolute;
+    content: "";
+    width: 15px;
+    height: 15px;
+    background-color: var(--main-color);
+    top: 20px;
+    right: -5px;
+    transform: rotate(45deg);
+}
+.experience .row .DES{
+    margin-top: 10px;
+    opacity: 0.8;
+}
+.row-2 {
+    display: flex;
+    justify-content: flex-end;
+}
+.row-2 .Sec {
+    animation: sy-load 1s ease-in;
+}
+.row-3{
+    display: flex;
+    justify-content: flex-start;
+}
+.row-3 .Sec{
+    animation: sx-load 1s ease-in;
+}
+#icon1{
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    right: -116px;
+}
+#icon2{
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    left: -112px;
+}
+#icon3{
+    position: absolute;
+    background-color: var(--main-color);
+    color: white;
+    padding: 10px;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    top: 10px;
+    right: -117px;
+}
+@media screen and (max-width:600px) {
+    .Vertical-Line {
+        left: 5%;
+    }
+    .row{
+        justify-content: flex-start;
+    }
+    .row .Sec {
+        width: 80%;
+      justify-content: flex-start;
+      margin-top: 40px;
+      margin-left: 110px;
+      position: relative;
+    }
+    .row-2 .Sec::before{
+        position: absolute;
+        content: "";
+        width: 15px;
+        height: 15px;
+        background-color: var(--main-color);
+        top: 20px;
+        right: -5%;
+        transform: rotate(45deg);
+    } 
+    .row .Sec::before{
+        left: -5px;
+    }
+    .experience-header{
+        margin-bottom: 50px;
+    }
+    #icon1,#icon2,#icon3{
+        width: 25px;
+        height: 25px;
+        top: 10px;
+        left: -20%;
+    }
+}
+@media screen and (max-width:545px) {
+    .Vertical-Line {
+        left: 9%;
+        margin-top: 10px;
+    }
+    #icon1,#icon2,#icon3{
+        left: -15%;
+    }
+}
+
+@media screen and (max-width:470px) {
+    .row{
+        font-size: 12px;
+    }
+    #icon1,#icon2,#icon3,.Vertical-Line{
+        display: none;
+    }
+    .row .Sec::before{
+        display: none;
+    }
+    .row .Sec{
+        width: 95%;
+    }
+    .row .Sec{
+        margin-left: 22px;
+    }
+
+}
+@keyframes sx-load{
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes sy-load{
+    0%{
+        transform: translateX(100%);
+    }
+    100%{
+        transform: translateX(0);
+    }
+}

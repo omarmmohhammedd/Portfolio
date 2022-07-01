@@ -1,0 +1,42 @@
+.Footer{
+    background-color: var(--main-color);
+    color: White;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.Footer .icons{
+    width: 100%;
+    height: fit-content;
+    padding: 10px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.Footer .icons a {
+    color: white;
+}
+.Footer .icons svg{
+    height: 70px;
+    margin: 20px;
+}
+.Footer p {
+    font-size: 25px;
+    user-select: none;
+}
+.Footer .icons svg:hover{
+    transform: scale(1.1);
+    transition: 0.1s ease-in;
+}
+@media screen and (max-width:500px) {
+    .Footer .icons svg{
+        height: 40px;
+        margin: 10px;
+    }
+    .Footer p {
+        font-size: 18px;
+    }
+}
