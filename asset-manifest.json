@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/Portfolio/static/css/main.2a89fa28.css",
+    "main.js": "/Portfolio/static/js/main.a4b25048.js",
+    "static/media/Resturant.jpg": "/Portfolio/static/media/Resturant.3be3979a975971fa280c.jpg",
+    "static/media/SunnyDay.jpg": "/Portfolio/static/media/SunnyDay.49b52ffa54752cb7c2d0.jpg",
+    "static/media/Quizapp.png": "/Portfolio/static/media/Quizapp.1d4d190b29cff73058f7.png",
+    "static/media/TicTacToe.png": "/Portfolio/static/media/TicTacToe.ee4b56977ba4fce7953b.png",
+    "index.html": "/Portfolio/index.html",
+    "main.2a89fa28.css.map": "/Portfolio/static/css/main.2a89fa28.css.map",
+    "main.a4b25048.js.map": "/Portfolio/static/js/main.a4b25048.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2a89fa28.css",
+    "static/js/main.a4b25048.js"
+  ]
+}
